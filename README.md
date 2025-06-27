@@ -32,7 +32,7 @@
 { "name": "Bob" }
 ```
 - Behavior:
-  - Adds new greeting if name doesn’t exist
+  - Adds new greeting if name doesnâ€™t exist
   - Updates message and timestamp if it does
 - Response: `Hello, Bob`
 
@@ -56,15 +56,15 @@ dotnet test HelloWorldAPI.Tests
 ## Project Structure
 ```
 HelloWorldSolution/
-??? HelloWorldAPI/          # ASP.NET Core Web API
-??? HelloWorldClient/       # Console Client App
-??? HelloWorldAPI.Tests/    # Unit & Integration Tests
+  HelloWorldAPI/          # ASP.NET Core Web API
+  HelloWorldClient/       # Console Client App
+  HelloWorldAPI.Tests/    # Unit & Integration Tests
 ```
 
 ---
 
 ## Notes
-- The application uses a fresh in-memory database for each run.
+- The application uses a sql server database for each run.
 - Customize caching or replace MemoryCache/EF with production-grade services for real deployment.
 
 ---
