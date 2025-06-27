@@ -1,0 +1,21 @@
+@HelloWorldAPI_HostAddress = https://localhost:7026
+
+GET {{HelloWorldAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+### Simulate Get
+
+GET {{HelloWorldAPI_HostAddress}}/api/greeting
+
+### Simulate post method
+
+POST {{HelloWorldAPI_HostAddress}}/api/greeting
+Content-Type: application/json
+
+{
+  "name":"manju",
+  "message":" Hearty Welcome"
+}
+
+### Simulate a server failure
+GET https://localhost:5001/api/greeting/fail
